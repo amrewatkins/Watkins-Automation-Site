@@ -4,6 +4,7 @@ import { HowItWorks } from "@/components/how-it-works"
 import { SystemsSection } from "@/components/systems-section"
 import { FullFunnelTable } from "@/components/full-funnel-table"
 import { StatsSection } from "@/components/stats-section"
+import { PricingSection } from "@/components/pricing-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 
@@ -16,6 +17,7 @@ export default function Page() {
       <SystemsSection />
       <FullFunnelTable />
       <StatsSection />
+      <PricingSection />
       <ContactSection />
       <Footer />
     </main>
