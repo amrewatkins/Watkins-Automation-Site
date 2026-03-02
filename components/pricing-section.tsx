@@ -38,14 +38,14 @@ export function PricingSection() {
             <div>
               <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Setup</p>
               <p className="text-4xl md:text-5xl font-extrabold font-display text-primary">
-                $3,500
+                $7,500
               </p>
               <p className="text-sm text-muted-foreground mt-1">one-time</p>
             </div>
             <div className="md:text-right">
               <p className="text-sm text-muted-foreground uppercase tracking-wide mb-2">Monthly</p>
               <p className="text-4xl md:text-5xl font-extrabold font-display text-primary">
-                $1,000
+                $3,000
               </p>
               <p className="text-sm text-muted-foreground mt-1">per month</p>
             </div>
