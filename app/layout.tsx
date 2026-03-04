@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata, Viewport } from "next"
 import { Inter, Barlow_Condensed } from "next/font/google"
 import "./globals.css"
+import { PHProvider } from "@/lib/posthog"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const barlow = Barlow_Condensed({
@@ -27,7 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${barlow.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <PHProvider>{children}</PHProvider>
+      </body>
     </html>
   )
 }

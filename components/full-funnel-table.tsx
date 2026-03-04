@@ -13,16 +13,15 @@ import {
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const funnelSteps = [
-  { step: 1, what: "Customer sees your Facebook ad", system: "Facebook Ads", auto: true },
+  { step: 1, what: "Customer finds you and visits your site", system: "Website", auto: true },
   { step: 2, what: "They fill out the lead form", system: "Website / Lead Form", auto: true },
   { step: 3, what: "You get a text with their info in seconds", system: "Lead Follow-Up", auto: true },
   { step: 4, what: "They get an automatic response", system: "Lead Follow-Up", auto: true },
-  { step: 5, what: "They visit your site to learn more", system: "Website", auto: true },
-  { step: 6, what: "They book and drop off their vehicle", system: "\u2014", auto: false },
-  { step: 7, what: "They get text updates through service", system: "Job Tracker", auto: true },
-  { step: 8, what: 'They get a "Ready for Pickup" text', system: "Job Tracker", auto: true },
-  { step: 9, what: "After pickup, asked to rate experience", system: "Review Shield", auto: true },
-  { step: 10, what: "Happy \u2192 Google review. Unhappy \u2192 private to you", system: "Review Shield", auto: true },
+  { step: 5, what: "They book and drop off their vehicle", system: "\u2014", auto: false },
+  { step: 6, what: "They get text updates through service", system: "Job Tracker", auto: true },
+  { step: 7, what: 'They get a "Ready for Pickup" text', system: "Job Tracker", auto: true },
+  { step: 8, what: "After pickup, asked to rate experience", system: "Review Shield", auto: true },
+  { step: 9, what: "Happy \u2192 Google review. Unhappy \u2192 private to you", system: "Review Shield", auto: true },
 ]
 
 export function FullFunnelTable() {
@@ -36,7 +35,7 @@ export function FullFunnelTable() {
             The Full System
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            From ad to review — every step of the customer journey, fully automated.
+            From first visit to five-star review — every step of the customer journey, fully automated.
           </p>
         </div>
 
@@ -104,7 +103,7 @@ export function FullFunnelTable() {
 
         <div className={`mt-8 text-center ${isVisible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "0.4s" }}>
           <p className="text-sm text-muted-foreground">
-            9 out of 10 steps are fully automated. Your team just does the work — the system handles everything else.
+            8 out of 9 steps are fully automated. Your team just does the work — the system handles everything else.
           </p>
         </div>
       </div>

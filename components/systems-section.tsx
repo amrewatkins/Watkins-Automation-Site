@@ -1,24 +1,11 @@
 "use client"
 
-import { Megaphone, Globe, Zap, MessageSquare, ShieldCheck, Check } from "lucide-react"
+import { Globe, Zap, MessageSquare, ShieldCheck, Check } from "lucide-react"
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const systems = [
-  {
-    icon: Megaphone,
-    title: "Facebook Ads",
-    tagline: "Get Customers",
-    description:
-      "Custom ad campaigns targeting vehicle owners in your area. We handle creative, targeting, optimization, and reporting.",
-    features: [
-      "Custom campaigns for your services and location",
-      "Instant lead notification via text and email",
-      "Automatic follow-up to every lead",
-      "Weekly optimization, monthly reporting",
-    ],
-  },
   {
     icon: Globe,
     title: "Custom Website",
@@ -88,7 +75,7 @@ export function SystemsSection() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {systems.map((system, index) => (
             <Card
               key={system.title}

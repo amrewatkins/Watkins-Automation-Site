@@ -1,10 +1,9 @@
 "use client"
 
-import { Megaphone, Globe, Zap, MessageSquare, ShieldCheck, ChevronRight, ChevronDown } from "lucide-react"
+import { Globe, Zap, MessageSquare, ShieldCheck, ChevronRight, ChevronDown } from "lucide-react"
 import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const steps = [
-  { icon: Megaphone, label: "Get Customers", system: "Facebook Ads" },
   { icon: Globe, label: "Capture Their Info", system: "Custom Website" },
   { icon: Zap, label: "Follow Up Instantly", system: "Lead Automation" },
   { icon: MessageSquare, label: "Keep Them Updated", system: "Job Tracker" },
@@ -22,7 +21,7 @@ export function HowItWorks() {
             How It All Works
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Five connected systems that cover the entire customer journey. Start with one, add more as your shop grows. Everything runs on autopilot.
+            Four connected systems that cover the entire customer journey. Start with one, add more as your shop grows. Everything runs on autopilot.
           </p>
         </div>
 

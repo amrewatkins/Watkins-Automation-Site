@@ -7,10 +7,12 @@ import { StatsSection } from "@/components/stats-section"
 import { PricingSection } from "@/components/pricing-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { PostHogPageView } from "@/lib/posthog"
 
 export default function Page() {
   return (
     <main>
+      <PostHogPageView />
       <Navbar />
       <HeroSection />
       <HowItWorks />
